@@ -14,7 +14,47 @@
 		8BBDE760221A0A24005DF10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBDE75E221A0A24005DF10C /* Main.storyboard */; };
 		8BBDE762221A0A26005DF10C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBDE761221A0A26005DF10C /* Assets.xcassets */; };
 		8BBDE765221A0A26005DF10C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBDE763221A0A26005DF10C /* LaunchScreen.storyboard */; };
+		8BBDE859221A0FF8005DF10C /* Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBDE858221A0FD8005DF10C /* Splash.framework */; };
+		8BBDE85A221A0FF8005DF10C /* Splash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBDE858221A0FD8005DF10C /* Splash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BBDE855221A0FD8005DF10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Dependencies::Dependencies::Product";
+			remoteInfo = Dependencies;
+		};
+		8BBDE857221A0FD8005DF10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Splash::Splash::Product";
+			remoteInfo = Splash;
+		};
+		8BBDE85B221A0FF8005DF10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "Splash::Splash";
+			remoteInfo = Splash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BBDE85D221A0FF8005DF10C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8BBDE85A221A0FF8005DF10C /* Splash.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8BBDE753221A0A24005DF10C /* SwiftPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +66,7 @@
 		8BBDE761221A0A26005DF10C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BBDE764221A0A26005DF10C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BBDE766221A0A26005DF10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dependencies.xcodeproj; path = Dependencies/Dependencies.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBDE859221A0FF8005DF10C /* Splash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +84,7 @@
 		8BBDE74A221A0A24005DF10C = {
 			isa = PBXGroup;
 			children = (
+				8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */,
 				8BBDE755221A0A24005DF10C /* SwiftPreview */,
 				8BBDE754221A0A24005DF10C /* Products */,
 			);
@@ -70,6 +113,15 @@
 			path = SwiftPreview;
 			sourceTree = "<group>";
 		};
+		8BBDE84E221A0FD8005DF10C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BBDE856221A0FD8005DF10C /* Dependencies.framework */,
+				8BBDE858221A0FD8005DF10C /* Splash.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,10 +132,12 @@
 				8BBDE74F221A0A24005DF10C /* Sources */,
 				8BBDE750221A0A24005DF10C /* Frameworks */,
 				8BBDE751221A0A24005DF10C /* Resources */,
+				8BBDE85D221A0FF8005DF10C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8BBDE85C221A0FF8005DF10C /* PBXTargetDependency */,
 			);
 			name = SwiftPreview;
 			productName = SwiftPreview;
@@ -116,12 +170,35 @@
 			mainGroup = 8BBDE74A221A0A24005DF10C;
 			productRefGroup = 8BBDE754221A0A24005DF10C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8BBDE84E221A0FD8005DF10C /* Products */;
+					ProjectRef = 8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8BBDE752221A0A24005DF10C /* SwiftPreview */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8BBDE856221A0FD8005DF10C /* Dependencies.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Dependencies.framework;
+			remoteRef = 8BBDE855221A0FD8005DF10C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8BBDE858221A0FD8005DF10C /* Splash.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Splash.framework;
+			remoteRef = 8BBDE857221A0FD8005DF10C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8BBDE751221A0A24005DF10C /* Resources */ = {
@@ -149,6 +226,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BBDE85C221A0FF8005DF10C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Splash;
+			targetProxy = 8BBDE85B221A0FF8005DF10C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8BBDE75E221A0A24005DF10C /* Main.storyboard */ = {
@@ -289,6 +374,7 @@
 		8BBDE76A221A0A26005DF10C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VL46Q749LJ;
@@ -307,6 +393,7 @@
 		8BBDE76B221A0A26005DF10C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VL46Q749LJ;

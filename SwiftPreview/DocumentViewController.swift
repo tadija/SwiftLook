@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Splash
 
 class DocumentViewController: UIViewController {
     
