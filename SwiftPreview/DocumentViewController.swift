@@ -15,12 +15,17 @@ class DocumentViewController: UIViewController {
     
     var document: UIDocument?
 
+    private let theme = Theme.sundellsColors(withFont: Font(size: 12))
+
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let backColor = UIColor(red: 0.098, green: 0.098, blue: 0.098, alpha: 1)
-        view.backgroundColor = backColor
-        textView.backgroundColor = backColor
+        view.backgroundColor = theme.backgroundColor
+        textView.backgroundColor = theme.backgroundColor
         textView.isEditable = false
     }
     
@@ -53,9 +58,7 @@ class DocumentViewController: UIViewController {
                 return
         }
         let highlighter = SyntaxHighlighter(
-            format: AttributedStringOutputFormat(
-                theme: .sundellsColors(withFont: Font(size: 12))
-            )
+            format: AttributedStringOutputFormat(theme: theme)
         )
         let attributedText = highlighter.highlight(content)
         textView.attributedText = attributedText
