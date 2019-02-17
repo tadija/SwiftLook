@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "Dependencies", type: .dynamic, targets: ["Dependencies"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/JohnSundell/Splash", from: "0.1.4"),
+        .package(url: "https://github.com/JohnSundell/Splash", .branch("master")),
     ],
     targets: [
         .target(name: "Dependencies", dependencies: ["Splash"], path: "." )
