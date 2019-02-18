@@ -34,37 +34,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rSU-dU-hC7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFe-9a-oyz">
-                                <rect key="frame" x="168" y="617" width="39" height="30"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="dismissDocumentViewController" destination="M2k-L8-Olo" eventType="touchUpInside" id="emn-kV-iz4"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rSU-dU-hC7" firstAttribute="top" secondItem="BoZ-jc-2Y8" secondAttribute="top" id="8Rq-04-ihr"/>
+                            <constraint firstItem="rSU-dU-hC7" firstAttribute="top" secondItem="SIE-Uh-Zny" secondAttribute="top" id="8Rq-04-ihr"/>
                             <constraint firstItem="BoZ-jc-2Y8" firstAttribute="trailing" secondItem="rSU-dU-hC7" secondAttribute="trailing" id="Ow0-Wm-aeW"/>
-                            <constraint firstItem="BoZ-jc-2Y8" firstAttribute="bottom" secondItem="rSU-dU-hC7" secondAttribute="bottom" id="YWR-rR-pf5"/>
-                            <constraint firstItem="qFe-9a-oyz" firstAttribute="centerX" secondItem="rSU-dU-hC7" secondAttribute="centerX" id="dCf-3i-HJs"/>
+                            <constraint firstAttribute="bottom" secondItem="rSU-dU-hC7" secondAttribute="bottom" id="YWR-rR-pf5"/>
                             <constraint firstItem="rSU-dU-hC7" firstAttribute="leading" secondItem="BoZ-jc-2Y8" secondAttribute="leading" id="nye-HJ-VWR"/>
-                            <constraint firstItem="BoZ-jc-2Y8" firstAttribute="bottom" secondItem="qFe-9a-oyz" secondAttribute="bottom" constant="20" id="x3K-oY-XJQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BoZ-jc-2Y8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GZw-1w-BGE"/>
                     <connections>
                         <outlet property="textView" destination="rSU-dU-hC7" id="UdN-Fl-VCx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rl9-ES-qQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="654"/>
+            <point key="canvasLocation" x="1968.8" y="653.52323838080963"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O2x-gf-RLP">
+            <objects>
+                <navigationController storyboardIdentifier="DocumentNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Akr-JC-BHh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XNf-GV-CkM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M2k-L8-Olo" kind="relationship" relationship="rootViewController" id="4do-qe-do4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxA-LJ-hZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029.5999999999999" y="653.52323838080963"/>
         </scene>
     </scenes>
 </document>
