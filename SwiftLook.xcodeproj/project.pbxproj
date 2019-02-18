@@ -57,7 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8BBDE753221A0A24005DF10C /* SwiftPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBDE753221A0A24005DF10C /* SwiftLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBDE756221A0A24005DF10C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BBDE758221A0A24005DF10C /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
 		8BBDE75A221A0A24005DF10C /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */,
-				8BBDE755221A0A24005DF10C /* SwiftPreview */,
+				8BBDE755221A0A24005DF10C /* SwiftLook */,
 				8BBDE754221A0A24005DF10C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,12 +93,12 @@
 		8BBDE754221A0A24005DF10C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BBDE753221A0A24005DF10C /* SwiftPreview.app */,
+				8BBDE753221A0A24005DF10C /* SwiftLook.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BBDE755221A0A24005DF10C /* SwiftPreview */ = {
+		8BBDE755221A0A24005DF10C /* SwiftLook */ = {
 			isa = PBXGroup;
 			children = (
 				8BBDE756221A0A24005DF10C /* AppDelegate.swift */,
@@ -110,7 +110,7 @@
 				8BBDE763221A0A26005DF10C /* LaunchScreen.storyboard */,
 				8BBDE766221A0A26005DF10C /* Info.plist */,
 			);
-			path = SwiftPreview;
+			path = SwiftLook;
 			sourceTree = "<group>";
 		};
 		8BBDE84E221A0FD8005DF10C /* Products */ = {
@@ -125,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BBDE752221A0A24005DF10C /* SwiftPreview */ = {
+		8BBDE752221A0A24005DF10C /* SwiftLook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BBDE769221A0A26005DF10C /* Build configuration list for PBXNativeTarget "SwiftPreview" */;
+			buildConfigurationList = 8BBDE769221A0A26005DF10C /* Build configuration list for PBXNativeTarget "SwiftLook" */;
 			buildPhases = (
 				8BBDE74F221A0A24005DF10C /* Sources */,
 				8BBDE750221A0A24005DF10C /* Frameworks */,
@@ -139,9 +139,9 @@
 			dependencies = (
 				8BBDE85C221A0FF8005DF10C /* PBXTargetDependency */,
 			);
-			name = SwiftPreview;
-			productName = SwiftPreview;
-			productReference = 8BBDE753221A0A24005DF10C /* SwiftPreview.app */;
+			name = SwiftLook;
+			productName = SwiftLook;
+			productReference = 8BBDE753221A0A24005DF10C /* SwiftLook.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BBDE74E221A0A24005DF10C /* Build configuration list for PBXProject "SwiftPreview" */;
+			buildConfigurationList = 8BBDE74E221A0A24005DF10C /* Build configuration list for PBXProject "SwiftLook" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -178,7 +178,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				8BBDE752221A0A24005DF10C /* SwiftPreview */,
+				8BBDE752221A0A24005DF10C /* SwiftLook */,
 			);
 		};
 /* End PBXProject section */
@@ -378,12 +378,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VL46Q749LJ;
-				INFOPLIST_FILE = SwiftPreview/Info.plist;
+				INFOPLIST_FILE = SwiftLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.SwiftPreview;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.SwiftLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -397,12 +397,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VL46Q749LJ;
-				INFOPLIST_FILE = SwiftPreview/Info.plist;
+				INFOPLIST_FILE = SwiftLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.SwiftPreview;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.SwiftLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BBDE74E221A0A24005DF10C /* Build configuration list for PBXProject "SwiftPreview" */ = {
+		8BBDE74E221A0A24005DF10C /* Build configuration list for PBXProject "SwiftLook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BBDE767221A0A26005DF10C /* Debug */,
@@ -421,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BBDE769221A0A26005DF10C /* Build configuration list for PBXNativeTarget "SwiftPreview" */ = {
+		8BBDE769221A0A26005DF10C /* Build configuration list for PBXNativeTarget "SwiftLook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BBDE76A221A0A26005DF10C /* Debug */,

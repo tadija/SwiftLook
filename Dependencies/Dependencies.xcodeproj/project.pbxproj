@@ -11,59 +11,59 @@
 		OBJ_61 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Dependencies.swift */; };
 		OBJ_63 /* Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = Splash::Splash::Product /* Splash.framework */; };
 		OBJ_71 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_76 /* CharacterSet+Contains.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* CharacterSet+Contains.swift */; };
-		OBJ_77 /* Equatable+AnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Equatable+AnyOf.swift */; };
-		OBJ_78 /* Int+IsOdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Int+IsOdd.swift */; };
-		OBJ_79 /* Sequence+AnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Sequence+AnyOf.swift */; };
-		OBJ_80 /* Sequence+Occurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Sequence+Occurrences.swift */; };
-		OBJ_81 /* String+IsNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* String+IsNumber.swift */; };
-		OBJ_82 /* String+PrefixChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* String+PrefixChecking.swift */; };
-		OBJ_83 /* String+Removing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* String+Removing.swift */; };
-		OBJ_84 /* Substring+HasSuffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Substring+HasSuffix.swift */; };
-		OBJ_85 /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Grammar.swift */; };
-		OBJ_86 /* SwiftGrammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* SwiftGrammar.swift */; };
-		OBJ_87 /* AttributedStringOutputFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* AttributedStringOutputFormat.swift */; };
-		OBJ_88 /* HTMLOutputFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* HTMLOutputFormat.swift */; };
-		OBJ_89 /* OutputBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* OutputBuilder.swift */; };
-		OBJ_90 /* OutputFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* OutputFormat.swift */; };
-		OBJ_91 /* SyntaxHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* SyntaxHighlighter.swift */; };
-		OBJ_92 /* SyntaxRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* SyntaxRule.swift */; };
-		OBJ_93 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Color.swift */; };
-		OBJ_94 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Font.swift */; };
-		OBJ_95 /* Theme+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Theme+Defaults.swift */; };
-		OBJ_96 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Theme.swift */; };
-		OBJ_97 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Segment.swift */; };
-		OBJ_98 /* TokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* TokenType.swift */; };
-		OBJ_99 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Tokenizer.swift */; };
+		OBJ_76 /* CharacterSet+Contains.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* CharacterSet+Contains.swift */; };
+		OBJ_77 /* Equatable+AnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Equatable+AnyOf.swift */; };
+		OBJ_78 /* Int+IsOdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Int+IsOdd.swift */; };
+		OBJ_79 /* Sequence+AnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Sequence+AnyOf.swift */; };
+		OBJ_80 /* Sequence+Occurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Sequence+Occurrences.swift */; };
+		OBJ_81 /* String+IsNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* String+IsNumber.swift */; };
+		OBJ_82 /* String+PrefixChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* String+PrefixChecking.swift */; };
+		OBJ_83 /* String+Removing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* String+Removing.swift */; };
+		OBJ_84 /* Substring+HasSuffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Substring+HasSuffix.swift */; };
+		OBJ_85 /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Grammar.swift */; };
+		OBJ_86 /* SwiftGrammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* SwiftGrammar.swift */; };
+		OBJ_87 /* AttributedStringOutputFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* AttributedStringOutputFormat.swift */; };
+		OBJ_88 /* HTMLOutputFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* HTMLOutputFormat.swift */; };
+		OBJ_89 /* OutputBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* OutputBuilder.swift */; };
+		OBJ_90 /* OutputFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* OutputFormat.swift */; };
+		OBJ_91 /* SyntaxHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* SyntaxHighlighter.swift */; };
+		OBJ_92 /* SyntaxRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* SyntaxRule.swift */; };
+		OBJ_93 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Color.swift */; };
+		OBJ_94 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Font.swift */; };
+		OBJ_95 /* Theme+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Theme+Defaults.swift */; };
+		OBJ_96 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Theme.swift */; };
+		OBJ_97 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Segment.swift */; };
+		OBJ_98 /* TokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* TokenType.swift */; };
+		OBJ_99 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Tokenizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		Dependencies::Dependencies::Product /* Dependencies.framework */ = {isa = PBXFileReference; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_19 /* CharacterSet+Contains.swift */ = {isa = PBXFileReference; path = "CharacterSet+Contains.swift"; sourceTree = "<group>"; };
-		OBJ_21 /* Equatable+AnyOf.swift */ = {isa = PBXFileReference; path = "Equatable+AnyOf.swift"; sourceTree = "<group>"; };
-		OBJ_23 /* Int+IsOdd.swift */ = {isa = PBXFileReference; path = "Int+IsOdd.swift"; sourceTree = "<group>"; };
-		OBJ_25 /* Sequence+AnyOf.swift */ = {isa = PBXFileReference; path = "Sequence+AnyOf.swift"; sourceTree = "<group>"; };
-		OBJ_26 /* Sequence+Occurrences.swift */ = {isa = PBXFileReference; path = "Sequence+Occurrences.swift"; sourceTree = "<group>"; };
-		OBJ_28 /* String+IsNumber.swift */ = {isa = PBXFileReference; path = "String+IsNumber.swift"; sourceTree = "<group>"; };
-		OBJ_29 /* String+PrefixChecking.swift */ = {isa = PBXFileReference; path = "String+PrefixChecking.swift"; sourceTree = "<group>"; };
-		OBJ_30 /* String+Removing.swift */ = {isa = PBXFileReference; path = "String+Removing.swift"; sourceTree = "<group>"; };
-		OBJ_31 /* Substring+HasSuffix.swift */ = {isa = PBXFileReference; path = "Substring+HasSuffix.swift"; sourceTree = "<group>"; };
-		OBJ_33 /* Grammar.swift */ = {isa = PBXFileReference; path = Grammar.swift; sourceTree = "<group>"; };
-		OBJ_34 /* SwiftGrammar.swift */ = {isa = PBXFileReference; path = SwiftGrammar.swift; sourceTree = "<group>"; };
-		OBJ_36 /* AttributedStringOutputFormat.swift */ = {isa = PBXFileReference; path = AttributedStringOutputFormat.swift; sourceTree = "<group>"; };
-		OBJ_37 /* HTMLOutputFormat.swift */ = {isa = PBXFileReference; path = HTMLOutputFormat.swift; sourceTree = "<group>"; };
-		OBJ_38 /* OutputBuilder.swift */ = {isa = PBXFileReference; path = OutputBuilder.swift; sourceTree = "<group>"; };
-		OBJ_39 /* OutputFormat.swift */ = {isa = PBXFileReference; path = OutputFormat.swift; sourceTree = "<group>"; };
-		OBJ_41 /* SyntaxHighlighter.swift */ = {isa = PBXFileReference; path = SyntaxHighlighter.swift; sourceTree = "<group>"; };
-		OBJ_42 /* SyntaxRule.swift */ = {isa = PBXFileReference; path = SyntaxRule.swift; sourceTree = "<group>"; };
-		OBJ_44 /* Color.swift */ = {isa = PBXFileReference; path = Color.swift; sourceTree = "<group>"; };
-		OBJ_45 /* Font.swift */ = {isa = PBXFileReference; path = Font.swift; sourceTree = "<group>"; };
-		OBJ_46 /* Theme+Defaults.swift */ = {isa = PBXFileReference; path = "Theme+Defaults.swift"; sourceTree = "<group>"; };
-		OBJ_47 /* Theme.swift */ = {isa = PBXFileReference; path = Theme.swift; sourceTree = "<group>"; };
-		OBJ_49 /* Segment.swift */ = {isa = PBXFileReference; path = Segment.swift; sourceTree = "<group>"; };
-		OBJ_50 /* TokenType.swift */ = {isa = PBXFileReference; path = TokenType.swift; sourceTree = "<group>"; };
-		OBJ_51 /* Tokenizer.swift */ = {isa = PBXFileReference; path = Tokenizer.swift; sourceTree = "<group>"; };
-		OBJ_52 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/tadija/Documents/Developer/Lab/SwiftPreview/Dependencies/.build/checkouts/Splash--3422332813145766500/Package.swift"; sourceTree = "<group>"; };
+		OBJ_16 /* CharacterSet+Contains.swift */ = {isa = PBXFileReference; path = "CharacterSet+Contains.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* Equatable+AnyOf.swift */ = {isa = PBXFileReference; path = "Equatable+AnyOf.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* Int+IsOdd.swift */ = {isa = PBXFileReference; path = "Int+IsOdd.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* Sequence+AnyOf.swift */ = {isa = PBXFileReference; path = "Sequence+AnyOf.swift"; sourceTree = "<group>"; };
+		OBJ_23 /* Sequence+Occurrences.swift */ = {isa = PBXFileReference; path = "Sequence+Occurrences.swift"; sourceTree = "<group>"; };
+		OBJ_25 /* String+IsNumber.swift */ = {isa = PBXFileReference; path = "String+IsNumber.swift"; sourceTree = "<group>"; };
+		OBJ_26 /* String+PrefixChecking.swift */ = {isa = PBXFileReference; path = "String+PrefixChecking.swift"; sourceTree = "<group>"; };
+		OBJ_27 /* String+Removing.swift */ = {isa = PBXFileReference; path = "String+Removing.swift"; sourceTree = "<group>"; };
+		OBJ_28 /* Substring+HasSuffix.swift */ = {isa = PBXFileReference; path = "Substring+HasSuffix.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* Grammar.swift */ = {isa = PBXFileReference; path = Grammar.swift; sourceTree = "<group>"; };
+		OBJ_31 /* SwiftGrammar.swift */ = {isa = PBXFileReference; path = SwiftGrammar.swift; sourceTree = "<group>"; };
+		OBJ_33 /* AttributedStringOutputFormat.swift */ = {isa = PBXFileReference; path = AttributedStringOutputFormat.swift; sourceTree = "<group>"; };
+		OBJ_34 /* HTMLOutputFormat.swift */ = {isa = PBXFileReference; path = HTMLOutputFormat.swift; sourceTree = "<group>"; };
+		OBJ_35 /* OutputBuilder.swift */ = {isa = PBXFileReference; path = OutputBuilder.swift; sourceTree = "<group>"; };
+		OBJ_36 /* OutputFormat.swift */ = {isa = PBXFileReference; path = OutputFormat.swift; sourceTree = "<group>"; };
+		OBJ_38 /* SyntaxHighlighter.swift */ = {isa = PBXFileReference; path = SyntaxHighlighter.swift; sourceTree = "<group>"; };
+		OBJ_39 /* SyntaxRule.swift */ = {isa = PBXFileReference; path = SyntaxRule.swift; sourceTree = "<group>"; };
+		OBJ_41 /* Color.swift */ = {isa = PBXFileReference; path = Color.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Font.swift */ = {isa = PBXFileReference; path = Font.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Theme+Defaults.swift */ = {isa = PBXFileReference; path = "Theme+Defaults.swift"; sourceTree = "<group>"; };
+		OBJ_44 /* Theme.swift */ = {isa = PBXFileReference; path = Theme.swift; sourceTree = "<group>"; };
+		OBJ_46 /* Segment.swift */ = {isa = PBXFileReference; path = Segment.swift; sourceTree = "<group>"; };
+		OBJ_47 /* TokenType.swift */ = {isa = PBXFileReference; path = TokenType.swift; sourceTree = "<group>"; };
+		OBJ_48 /* Tokenizer.swift */ = {isa = PBXFileReference; path = Tokenizer.swift; sourceTree = "<group>"; };
+		OBJ_52 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/tadija/Documents/Developer/Lab/SwiftLook/Dependencies/.build/checkouts/Splash--9175630567389897874/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Dependencies.swift */ = {isa = PBXFileReference; path = Dependencies.swift; sourceTree = "<group>"; };
 		Splash::Splash::Product /* Splash.framework */ = {isa = PBXFileReference; path = Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,170 +104,154 @@
 		OBJ_12 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* SplashTokenizer */,
-				OBJ_14 /* SplashHTMLGen */,
-				OBJ_15 /* SplashImageGen */,
-				OBJ_16 /* Splash */,
+				OBJ_13 /* Splash */,
+				OBJ_49 /* SplashHTMLGen */,
+				OBJ_50 /* SplashImageGen */,
+				OBJ_51 /* SplashTokenizer */,
 				OBJ_52 /* Package.swift */,
 			);
 			name = Splash;
 			path = "";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_13 /* SplashTokenizer */ = {
+		OBJ_13 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = SplashTokenizer;
-			path = ".build/checkouts/Splash--3422332813145766500/Sources/SplashTokenizer";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_14 /* SplashHTMLGen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = SplashHTMLGen;
-			path = ".build/checkouts/Splash--3422332813145766500/Sources/SplashHTMLGen";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_15 /* SplashImageGen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = SplashImageGen;
-			path = ".build/checkouts/Splash--3422332813145766500/Sources/SplashImageGen";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_16 /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_17 /* Extensions */,
-				OBJ_32 /* Grammar */,
-				OBJ_35 /* Output */,
-				OBJ_40 /* Syntax */,
-				OBJ_43 /* Theming */,
-				OBJ_48 /* Tokenizing */,
+				OBJ_14 /* Extensions */,
+				OBJ_29 /* Grammar */,
+				OBJ_32 /* Output */,
+				OBJ_37 /* Syntax */,
+				OBJ_40 /* Theming */,
+				OBJ_45 /* Tokenizing */,
 			);
 			name = Splash;
-			path = ".build/checkouts/Splash--3422332813145766500/Sources/Splash";
+			path = ".build/checkouts/Splash--9175630567389897874/Sources/Splash";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_17 /* Extensions */ = {
+		OBJ_14 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_18 /* CharacterSet */,
-				OBJ_20 /* Equatable */,
-				OBJ_22 /* Int */,
-				OBJ_24 /* Sequence */,
-				OBJ_27 /* Strings */,
+				OBJ_15 /* CharacterSet */,
+				OBJ_17 /* Equatable */,
+				OBJ_19 /* Int */,
+				OBJ_21 /* Sequence */,
+				OBJ_24 /* Strings */,
 			);
 			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		OBJ_18 /* CharacterSet */ = {
+		OBJ_15 /* CharacterSet */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* CharacterSet+Contains.swift */,
+				OBJ_16 /* CharacterSet+Contains.swift */,
 			);
 			name = CharacterSet;
 			path = CharacterSet;
 			sourceTree = "<group>";
 		};
-		OBJ_20 /* Equatable */ = {
+		OBJ_17 /* Equatable */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_21 /* Equatable+AnyOf.swift */,
+				OBJ_18 /* Equatable+AnyOf.swift */,
 			);
 			name = Equatable;
 			path = Equatable;
 			sourceTree = "<group>";
 		};
-		OBJ_22 /* Int */ = {
+		OBJ_19 /* Int */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* Int+IsOdd.swift */,
+				OBJ_20 /* Int+IsOdd.swift */,
 			);
 			name = Int;
 			path = Int;
 			sourceTree = "<group>";
 		};
-		OBJ_24 /* Sequence */ = {
+		OBJ_21 /* Sequence */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_25 /* Sequence+AnyOf.swift */,
-				OBJ_26 /* Sequence+Occurrences.swift */,
+				OBJ_22 /* Sequence+AnyOf.swift */,
+				OBJ_23 /* Sequence+Occurrences.swift */,
 			);
 			name = Sequence;
 			path = Sequence;
 			sourceTree = "<group>";
 		};
-		OBJ_27 /* Strings */ = {
+		OBJ_24 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_28 /* String+IsNumber.swift */,
-				OBJ_29 /* String+PrefixChecking.swift */,
-				OBJ_30 /* String+Removing.swift */,
-				OBJ_31 /* Substring+HasSuffix.swift */,
+				OBJ_25 /* String+IsNumber.swift */,
+				OBJ_26 /* String+PrefixChecking.swift */,
+				OBJ_27 /* String+Removing.swift */,
+				OBJ_28 /* Substring+HasSuffix.swift */,
 			);
 			name = Strings;
 			path = Strings;
 			sourceTree = "<group>";
 		};
-		OBJ_32 /* Grammar */ = {
+		OBJ_29 /* Grammar */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_33 /* Grammar.swift */,
-				OBJ_34 /* SwiftGrammar.swift */,
+				OBJ_30 /* Grammar.swift */,
+				OBJ_31 /* SwiftGrammar.swift */,
 			);
 			name = Grammar;
 			path = Grammar;
 			sourceTree = "<group>";
 		};
-		OBJ_35 /* Output */ = {
+		OBJ_32 /* Output */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_36 /* AttributedStringOutputFormat.swift */,
-				OBJ_37 /* HTMLOutputFormat.swift */,
-				OBJ_38 /* OutputBuilder.swift */,
-				OBJ_39 /* OutputFormat.swift */,
+				OBJ_33 /* AttributedStringOutputFormat.swift */,
+				OBJ_34 /* HTMLOutputFormat.swift */,
+				OBJ_35 /* OutputBuilder.swift */,
+				OBJ_36 /* OutputFormat.swift */,
 			);
 			name = Output;
 			path = Output;
 			sourceTree = "<group>";
 		};
-		OBJ_40 /* Syntax */ = {
+		OBJ_37 /* Syntax */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_41 /* SyntaxHighlighter.swift */,
-				OBJ_42 /* SyntaxRule.swift */,
+				OBJ_38 /* SyntaxHighlighter.swift */,
+				OBJ_39 /* SyntaxRule.swift */,
 			);
 			name = Syntax;
 			path = Syntax;
 			sourceTree = "<group>";
 		};
-		OBJ_43 /* Theming */ = {
+		OBJ_40 /* Theming */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_44 /* Color.swift */,
-				OBJ_45 /* Font.swift */,
-				OBJ_46 /* Theme+Defaults.swift */,
-				OBJ_47 /* Theme.swift */,
+				OBJ_41 /* Color.swift */,
+				OBJ_42 /* Font.swift */,
+				OBJ_43 /* Theme+Defaults.swift */,
+				OBJ_44 /* Theme.swift */,
 			);
 			name = Theming;
 			path = Theming;
 			sourceTree = "<group>";
 		};
-		OBJ_48 /* Tokenizing */ = {
+		OBJ_45 /* Tokenizing */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_49 /* Segment.swift */,
-				OBJ_50 /* TokenType.swift */,
-				OBJ_51 /* Tokenizer.swift */,
+				OBJ_46 /* Segment.swift */,
+				OBJ_47 /* TokenType.swift */,
+				OBJ_48 /* Tokenizer.swift */,
 			);
 			name = Tokenizing;
 			path = Tokenizing;
 			sourceTree = "<group>";
+		};
+		OBJ_49 /* SplashHTMLGen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SplashHTMLGen;
+			path = ".build/checkouts/Splash--9175630567389897874/Sources/SplashHTMLGen";
+			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_5 = {
 			isa = PBXGroup;
@@ -280,6 +264,22 @@
 			);
 			path = "";
 			sourceTree = "<group>";
+		};
+		OBJ_50 /* SplashImageGen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SplashImageGen;
+			path = ".build/checkouts/Splash--9175630567389897874/Sources/SplashImageGen";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_51 /* SplashTokenizer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SplashTokenizer;
+			path = ".build/checkouts/Splash--9175630567389897874/Sources/SplashTokenizer";
+			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_53 /* Products */ = {
 			isa = PBXGroup;

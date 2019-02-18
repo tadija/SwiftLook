@@ -1,6 +1,6 @@
 //
 //  DocumentViewController.swift
-//  SwiftPreview
+//  SwiftLook
 //
 //  Created by Marko Tadić on 2/17/19.
 //  Copyright © 2019 AE. All rights reserved.
