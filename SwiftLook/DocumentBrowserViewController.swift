@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocumentBrowserViewControllerDelegate {
     
     override func viewDidLoad() {
@@ -18,10 +17,9 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         
         allowsDocumentCreation = false
         allowsPickingMultipleItems = false
-        
-        // Update the style of the UIDocumentBrowserViewController
-         browserUserInterfaceStyle = .dark
-         view.tintColor = .orange
+
+        browserUserInterfaceStyle = .dark
+        view.tintColor = .orange
 
         // Specify the allowed content types of your application via the Info.plist.
     }
@@ -60,13 +58,14 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
     // MARK: Document Presentation
     
     func presentDocument(at documentURL: URL) {
-
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let nvc = storyBoard.instantiateViewController(withIdentifier: "DocumentNavigationController") as! UINavigationController
-        let documentViewController = nvc.viewControllers.first as! DocumentViewController
+        let navigationController = storyBoard.instantiateViewController(
+            withIdentifier: "DocumentNavigationController"
+            ) as! UINavigationController
+        let documentViewController = navigationController.viewControllers.first as! DocumentViewController
         documentViewController.document = Document(fileURL: documentURL)
         
-        present(nvc, animated: true, completion: nil)
+        present(navigationController, animated: true, completion: nil)
     }
-}
 
+}

@@ -11,9 +11,13 @@ import Splash
 
 class DocumentViewController: UIViewController {
 
+    // MARK: Outlets
+
     @IBOutlet weak var textView: UITextView!
+
+    // MARK: Properties
     
-    var document: UIDocument?
+    var document: Document?
 
     private(set) var fontSize: CGFloat = 12 {
         didSet {
@@ -23,13 +27,11 @@ class DocumentViewController: UIViewController {
         }
     }
 
-    private lazy var theme: Theme = {
-        .sundellsColors(withFont: Font(size: Double(fontSize)))
-    }()
-
     override var prefersStatusBarHidden: Bool {
         return true
     }
+
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,13 +46,15 @@ class DocumentViewController: UIViewController {
         document?.open(completionHandler: { [weak self] (success) in
             guard let self = self else { return }
             if success {
-                self.displayFile(at: self.document?.fileURL)
+                self.textView.attributedText = self.document?.attributedText
             } else {
                 // Make sure to handle the failed import appropriately, e.g., by presenting an error message to the user.
             }
         })
     }
-    
+
+    // MARK: Actions
+
     @IBAction func dismissDocumentViewController() {
         dismiss(animated: true) {
             self.document?.close(completionHandler: nil)
@@ -59,11 +63,7 @@ class DocumentViewController: UIViewController {
 
     @objc
     func didRecognizeTapGesture(_ sender: UITapGestureRecognizer) {
-        guard let nvc = navigationController else {
-            return
-        }
-        nvc.setNavigationBarHidden(!nvc.isNavigationBarHidden, animated: true)
-        nvc.setToolbarHidden(!nvc.isToolbarHidden, animated: true)
+        toggleFullScreen()
     }
 
     @objc
@@ -76,7 +76,31 @@ class DocumentViewController: UIViewController {
         fontSize -= 1
     }
 
+    // MARK: Helpers
+
     private func configure() {
+        configureSelf()
+        configureToolbars()
+        configureButtons()
+    }
+
+    private func configureSelf() {
+        title = document?.fileURL.lastPathComponent
+
+        view.backgroundColor = document?.theme.backgroundColor
+
+        textView.backgroundColor = document?.theme.backgroundColor
+        textView.isEditable = false
+        textView.isSelectable = false
+
+        let tapGesture = UITapGestureRecognizer(
+            target: self,
+            action: #selector(didRecognizeTapGesture(_:))
+        )
+        textView.addGestureRecognizer(tapGesture)
+    }
+
+    private func configureToolbars() {
         guard let nvc = navigationController else {
             return
         }
@@ -93,7 +117,9 @@ class DocumentViewController: UIViewController {
         nvc.toolbar.barStyle = barStyle
         nvc.toolbar.barTintColor = barTint
         nvc.toolbar.tintColor = buttonTint
+    }
 
+    private func configureButtons() {
         let closeButton = UIBarButtonItem(
             barButtonSystemItem: .stop,
             target: self,
@@ -102,36 +128,38 @@ class DocumentViewController: UIViewController {
         navigationItem.leftBarButtonItem = closeButton
 
         let buttonFont = UIFont.systemFont(ofSize: 32)
-        let minusButton = UIBarButtonItem(title: "-", style: .plain, target: self, action: #selector(decreaseFontSize(_:)))
-        minusButton.setTitleTextAttributes([.font: buttonFont], for: .normal)
-        let plusButton = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(increaseFontSize(_:)))
-        plusButton.setTitleTextAttributes([.font: buttonFont], for: .normal)
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        toolbarItems = [minusButton, flexibleSpace, plusButton]
-
-        view.backgroundColor = theme.backgroundColor
-        textView.backgroundColor = theme.backgroundColor
-        textView.isEditable = false
-        textView.isSelectable = false
-
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didRecognizeTapGesture(_:)))
-        textView.addGestureRecognizer(tapGesture)
-
-        title = document?.fileURL.lastPathComponent
-    }
-
-    private func displayFile(at url: URL?) {
-        guard
-            let url = url,
-            let data = try? Data(contentsOf: url),
-            let content = String(data: data, encoding: .utf8)
-            else {
-                return
-        }
-        let highlighter = SyntaxHighlighter(
-            format: AttributedStringOutputFormat(theme: theme)
+        let minusButton = UIBarButtonItem(
+            title: "-",
+            style: .plain,
+            target: self,
+            action: #selector(decreaseFontSize)
         )
-        let attributedText = highlighter.highlight(content)
-        textView.attributedText = attributedText
+        minusButton.setTitleTextAttributes(
+            [.font: buttonFont], for: .normal
+        )
+        let plusButton = UIBarButtonItem(
+            title: "+",
+            style: .plain,
+            target: self,
+            action: #selector(increaseFontSize)
+        )
+        plusButton.setTitleTextAttributes(
+            [.font: buttonFont], for: .normal
+        )
+        let flexibleSpace = UIBarButtonItem(
+            barButtonSystemItem: .flexibleSpace,
+            target: nil,
+            action: nil
+        )
+        toolbarItems = [minusButton, flexibleSpace, plusButton]
     }
+
+    private func toggleFullScreen() {
+        guard let nvc = navigationController else {
+            return
+        }
+        nvc.setNavigationBarHidden(!nvc.isNavigationBarHidden, animated: true)
+        nvc.setToolbarHidden(!nvc.isToolbarHidden, animated: true)
+    }
+
 }
