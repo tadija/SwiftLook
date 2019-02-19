@@ -67,6 +67,8 @@
 		8BBDE764221A0A26005DF10C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BBDE766221A0A26005DF10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dependencies.xcodeproj; path = Dependencies/Dependencies.xcodeproj; sourceTree = "<group>"; };
+		8BBDE86E221C9A86005DF10C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8BBDE872221CAF4E005DF10C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,8 @@
 		8BBDE74A221A0A24005DF10C = {
 			isa = PBXGroup;
 			children = (
+				8BBDE872221CAF4E005DF10C /* LICENSE */,
+				8BBDE86E221C9A86005DF10C /* README.md */,
 				8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */,
 				8BBDE755221A0A24005DF10C /* SwiftLook */,
 				8BBDE754221A0A24005DF10C /* Products */,
@@ -105,9 +109,9 @@
 				8BBDE758221A0A24005DF10C /* DocumentBrowserViewController.swift */,
 				8BBDE75A221A0A24005DF10C /* DocumentViewController.swift */,
 				8BBDE75C221A0A24005DF10C /* Document.swift */,
+				8BBDE763221A0A26005DF10C /* LaunchScreen.storyboard */,
 				8BBDE75E221A0A24005DF10C /* Main.storyboard */,
 				8BBDE761221A0A26005DF10C /* Assets.xcassets */,
-				8BBDE763221A0A26005DF10C /* LaunchScreen.storyboard */,
 				8BBDE766221A0A26005DF10C /* Info.plist */,
 			);
 			path = SwiftLook;
