@@ -2,6 +2,9 @@
 
 import PackageDescription
 
+/// - Note: run `swift package update && rake xcodeproj` to update dependencies project
+/// - SeeAlso: https://www.ralfebert.de/ios-examples/xcode/ios-dependency-management-with-swift-package-manager
+
 let package = Package(
     name: "Dependencies",
     products: [

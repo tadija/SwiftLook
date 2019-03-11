@@ -63,7 +63,7 @@
 		OBJ_46 /* Segment.swift */ = {isa = PBXFileReference; path = Segment.swift; sourceTree = "<group>"; };
 		OBJ_47 /* TokenType.swift */ = {isa = PBXFileReference; path = TokenType.swift; sourceTree = "<group>"; };
 		OBJ_48 /* Tokenizer.swift */ = {isa = PBXFileReference; path = Tokenizer.swift; sourceTree = "<group>"; };
-		OBJ_52 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/tadija/Documents/Developer/Lab/SwiftLook/Dependencies/.build/checkouts/Splash--9175630567389897874/Package.swift"; sourceTree = "<group>"; };
+		OBJ_52 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/tadija/Documents/Developer/GitHub/SwiftLook/Dependencies/.build/checkouts/Splash--2974763481358565569/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Dependencies.swift */ = {isa = PBXFileReference; path = Dependencies.swift; sourceTree = "<group>"; };
 		Splash::Splash::Product /* Splash.framework */ = {isa = PBXFileReference; path = Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,9 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_13 /* Splash */,
-				OBJ_49 /* SplashHTMLGen */,
-				OBJ_50 /* SplashImageGen */,
-				OBJ_51 /* SplashTokenizer */,
+				OBJ_49 /* SplashTokenizer */,
+				OBJ_50 /* SplashHTMLGen */,
+				OBJ_51 /* SplashImageGen */,
 				OBJ_52 /* Package.swift */,
 			);
 			name = Splash;
@@ -125,7 +125,7 @@
 				OBJ_45 /* Tokenizing */,
 			);
 			name = Splash;
-			path = ".build/checkouts/Splash--9175630567389897874/Sources/Splash";
+			path = ".build/checkouts/Splash--2974763481358565569/Sources/Splash";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_14 /* Extensions */ = {
@@ -245,12 +245,12 @@
 			path = Tokenizing;
 			sourceTree = "<group>";
 		};
-		OBJ_49 /* SplashHTMLGen */ = {
+		OBJ_49 /* SplashTokenizer */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = SplashHTMLGen;
-			path = ".build/checkouts/Splash--9175630567389897874/Sources/SplashHTMLGen";
+			name = SplashTokenizer;
+			path = ".build/checkouts/Splash--2974763481358565569/Sources/SplashTokenizer";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_5 = {
@@ -265,20 +265,20 @@
 			path = "";
 			sourceTree = "<group>";
 		};
-		OBJ_50 /* SplashImageGen */ = {
+		OBJ_50 /* SplashHTMLGen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SplashHTMLGen;
+			path = ".build/checkouts/Splash--2974763481358565569/Sources/SplashHTMLGen";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_51 /* SplashImageGen */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = SplashImageGen;
-			path = ".build/checkouts/Splash--9175630567389897874/Sources/SplashImageGen";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_51 /* SplashTokenizer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = SplashTokenizer;
-			path = ".build/checkouts/Splash--9175630567389897874/Sources/SplashTokenizer";
+			path = ".build/checkouts/Splash--2974763481358565569/Sources/SplashImageGen";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_53 /* Products */ = {
@@ -463,8 +463,8 @@
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 4.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -473,8 +473,8 @@
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 4.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -612,7 +612,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Splash;
 			};
 			name = Debug;
@@ -637,7 +637,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Splash;
 			};
 			name = Release;
