@@ -5,9 +5,9 @@
         "package": "Splash",
         "repositoryURL": "https://github.com/JohnSundell/Splash",
         "state": {
-          "branch": "master",
-          "revision": "9a7fdefab48b283528d3567826d6cbeeaae1920b",
-          "version": null
+          "branch": null,
+          "revision": "4da9bbd0bc14d5774b112fc4bb1859d5a67fb478",
+          "version": "0.10.0"
         }
       }
     ]
