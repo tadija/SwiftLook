@@ -64,7 +64,7 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
             ) as! UINavigationController
         let documentViewController = navigationController.viewControllers.first as! DocumentViewController
         documentViewController.document = Document(fileURL: documentURL)
-        
+        navigationController.modalPresentationStyle = .fullScreen
         present(navigationController, animated: true, completion: nil)
     }
 
