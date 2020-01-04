@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B11EC3D23C14A8C00C931F5 /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 8B11EC3C23C14A8C00C931F5 /* Splash */; };
 		8BBDE757221A0A24005DF10C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBDE756221A0A24005DF10C /* AppDelegate.swift */; };
 		8BBDE759221A0A24005DF10C /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBDE758221A0A24005DF10C /* DocumentBrowserViewController.swift */; };
 		8BBDE75B221A0A24005DF10C /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBDE75A221A0A24005DF10C /* DocumentViewController.swift */; };
@@ -14,33 +15,7 @@
 		8BBDE760221A0A24005DF10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBDE75E221A0A24005DF10C /* Main.storyboard */; };
 		8BBDE762221A0A26005DF10C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBDE761221A0A26005DF10C /* Assets.xcassets */; };
 		8BBDE765221A0A26005DF10C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBDE763221A0A26005DF10C /* LaunchScreen.storyboard */; };
-		8BBDE859221A0FF8005DF10C /* Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBDE858221A0FD8005DF10C /* Splash.framework */; };
-		8BBDE85A221A0FF8005DF10C /* Splash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBDE858221A0FD8005DF10C /* Splash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8BBDE855221A0FD8005DF10C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "Dependencies::Dependencies::Product";
-			remoteInfo = Dependencies;
-		};
-		8BBDE857221A0FD8005DF10C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "Splash::Splash::Product";
-			remoteInfo = Splash;
-		};
-		8BBDE85B221A0FF8005DF10C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = "Splash::Splash";
-			remoteInfo = Splash;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8BBDE85D221A0FF8005DF10C /* Embed Frameworks */ = {
@@ -49,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8BBDE85A221A0FF8005DF10C /* Splash.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +40,6 @@
 		8BBDE761221A0A26005DF10C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BBDE764221A0A26005DF10C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BBDE766221A0A26005DF10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dependencies.xcodeproj; path = Dependencies/Dependencies.xcodeproj; sourceTree = "<group>"; };
 		8BBDE86E221C9A86005DF10C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8BBDE872221CAF4E005DF10C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BBDE859221A0FF8005DF10C /* Splash.framework in Frameworks */,
+				8B11EC3D23C14A8C00C931F5 /* Splash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +61,6 @@
 			children = (
 				8BBDE872221CAF4E005DF10C /* LICENSE */,
 				8BBDE86E221C9A86005DF10C /* README.md */,
-				8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */,
 				8BBDE755221A0A24005DF10C /* SwiftLook */,
 				8BBDE754221A0A24005DF10C /* Products */,
 			);
@@ -117,15 +89,6 @@
 			path = SwiftLook;
 			sourceTree = "<group>";
 		};
-		8BBDE84E221A0FD8005DF10C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8BBDE856221A0FD8005DF10C /* Dependencies.framework */,
-				8BBDE858221A0FD8005DF10C /* Splash.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +104,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				8BBDE85C221A0FF8005DF10C /* PBXTargetDependency */,
 			);
 			name = SwiftLook;
+			packageProductDependencies = (
+				8B11EC3C23C14A8C00C931F5 /* Splash */,
+			);
 			productName = SwiftLook;
 			productReference = 8BBDE753221A0A24005DF10C /* SwiftLook.app */;
 			productType = "com.apple.product-type.application";
@@ -172,37 +137,17 @@
 				Base,
 			);
 			mainGroup = 8BBDE74A221A0A24005DF10C;
+			packageReferences = (
+				8B11EC3B23C14A8C00C931F5 /* XCRemoteSwiftPackageReference "Splash" */,
+			);
 			productRefGroup = 8BBDE754221A0A24005DF10C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 8BBDE84E221A0FD8005DF10C /* Products */;
-					ProjectRef = 8BBDE84D221A0FD8005DF10C /* Dependencies.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8BBDE752221A0A24005DF10C /* SwiftLook */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		8BBDE856221A0FD8005DF10C /* Dependencies.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Dependencies.framework;
-			remoteRef = 8BBDE855221A0FD8005DF10C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8BBDE858221A0FD8005DF10C /* Splash.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Splash.framework;
-			remoteRef = 8BBDE857221A0FD8005DF10C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8BBDE751221A0A24005DF10C /* Resources */ = {
@@ -230,14 +175,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8BBDE85C221A0FF8005DF10C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Splash;
-			targetProxy = 8BBDE85B221A0FF8005DF10C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8BBDE75E221A0A24005DF10C /* Main.storyboard */ = {
@@ -439,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B11EC3B23C14A8C00C931F5 /* XCRemoteSwiftPackageReference "Splash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Splash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B11EC3C23C14A8C00C931F5 /* Splash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B11EC3B23C14A8C00C931F5 /* XCRemoteSwiftPackageReference "Splash" */;
+			productName = Splash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BBDE74B221A0A24005DF10C /* Project object */;
 }
